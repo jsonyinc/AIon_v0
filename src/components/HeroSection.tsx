@@ -1,20 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image";
 import { Button } from "@/components/ui/button"; // Assuming button component is in ui folder
 
 export default function HeroSection() {
   return (
     <section className="relative w-full h-screen flex items-center justify-center text-center bg-gray-900 text-white overflow-hidden">
-      <Image
-        src="/pattern.png" // Ensure this path is correct
-        alt="Background Pattern"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        className="absolute inset-0 z-0 opacity-30"
-      />
       <div className="relative z-10 container mx-auto px-4">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
